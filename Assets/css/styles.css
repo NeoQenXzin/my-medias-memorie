@@ -1,0 +1,271 @@
+/* background: #f3f4f7; */
+
+body {
+    background-color: #efeeee;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+form{
+    position: relative;
+}
+table{
+    margin-bottom: 100px;
+}
+.container-create-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* table tr .categorie-tr{
+    margin-bottom: 15px;
+    margin-top: 25px !important;
+} */
+.form-buttons-container{
+    width: 280px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.btn:focus {
+    outline:none !important;
+  }
+  
+  .neumorphic-btn {
+    /* font-size: 20px; */
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    color: #6D7587;
+    background-color: #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, .2),
+                inset 7px 7px 15px rgba(55, 84, 170, 0),
+                inset -7px -7px 20px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, 0) !important;
+    transition: box-shadow .25s ease !important;
+    cursor: pointer;
+  }
+  
+  .neumorphic-btn:active {  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, 0),
+                inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+  }
+  
+  
+  
+  .neumorphic-btn a{
+    text-decoration: none;
+    list-style: none;
+   color:  #6D7587
+  }
+  
+  
+  .neumorphic-card {
+    display: block;    
+    background-color: #efeeee;
+    padding: 40px;  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    /* width: 300px; */
+    /* width: min-content; */
+  }
+  
+  .neumorphic-card__title {
+    color: #555F76;
+    font-size: 22px;
+    padding: 20px 0 10px;
+    text-align: start;
+  }
+  
+  .neumorphic-card__text {
+    padding: 0 0 10px;
+    text-align: start;
+    color: #8D96A8;
+  }
+  
+  .neumorphic-card__outer {
+    background-color: #efeeee;
+    border-radius: 10px;
+    border: 5px solid #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;  
+    margin: -5px;
+  }
+  
+  /* .neumorphic-label {
+    color: #868b98;
+    display: block;
+    text-align: start;
+    margin: 25px 10px 5px;
+} */
+
+.neumorphic-input {
+    background-color: #efeeee;
+    border-radius: 10px;
+    border: 3px solid #efeeee;
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, .15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, .2) !important;
+    padding: 5px 15px;
+    outline: none !important;
+    color: #535D74;
+    margin: 25px 10px 5px;
+  }
+  
+  /* Page Gestion livres */
+  .neumorphic-input-gestion {
+      background-color: #efeeee;
+      border-radius: 0px;
+      border: 3px solid #efeeee;
+      box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+      inset 0px 0px 4px rgba(255, 255, 255, 0),
+      inset 7px 7px 15px rgba(55, 84, 170, .15),
+      inset -7px -7px 20px rgba(255, 255, 255, 1),
+      0px 0px 4px rgba(255, 255, 255, .2) !important;
+      padding: 5px 15px;
+      outline: none !important;
+      color: #535D74;
+      margin: 25px 10px 5px;
+    }
+  
+ 
+.container-gestion-form table
+{
+    padding: 50px;
+}
+.container-gestion-form 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+  .gestion-tr-title{
+    padding: 10px 20px !important;
+    
+  }
+  .container-gestion-form td{
+    padding: 10px 20px;
+  }
+  .container-gestion-form th
+  {
+      padding: 10px 20px !important;
+     
+  }
+
+  /* Page delete_form  */
+  .neumorphic-card-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    gap: 15px;
+    background-color: #efeeee;
+    padding: 40px;  
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 30px;
+    /* width: 300px; */
+    /* width: min-content; */
+  }
+  
+  .neumorphic-card-delete__title {
+    color: #555F76;
+    font-size: 22px;
+    padding: 20px 0 10px;
+    text-align: center;
+  }
+  
+  .neumorphic-card-delete__text {
+    padding: 0 0 10px;
+    text-align: center;
+    color: #8D96A8;
+  }
+  
+  .neumorphic-card-delete__outer {
+    background-color: #efeeee;
+    border-radius: 10px;
+    border: 5px solid #efeeee;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                0px 0px 4px rgba(255, 255, 255, .2) !important;  
+    margin: -5px;
+  }
+  
+  .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .delete-action-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .delete-title{
+    color: brown;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  /* livre update  */
+  .input-update {
+    border-radius: 4px;
+    padding: 2px;
+    border: none;
+    outline: none !important;
+    text-align: start;
+   
+    /* caret-color: white;
+    box-shadow:  inset 2px 2px 5px rgba(239, 239, 239, 0.064), inset -5px -5px 10px rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #efeeee;
+   
+    border: 1px solid #efeeee;
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15),
+    outset 0px 0px 4px rgba(255, 255, 255, 0),
+    outset 7px 7px 15px rgba(55, 84, 170, .15),
+    outset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, .2) !important;
+   
+    color: #101010; */
+   
+  
+  }
+
+
+  /* Media querries  */
+  
