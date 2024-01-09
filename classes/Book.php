@@ -147,4 +147,49 @@ class Book
             $this->stmt->closeCursor();
         }
     }
+
+    public function searchBooks($search, $category, $author)
+    {
+        // Construire la requête SQL en fonction des paramètres
+        $query = "SELECT * FROM livres WHERE 1=1";
+
+        if (!empty($search)) {
+            if (strlen($search) >= 2) {
+                $query .= " AND titre LIKE :search";
+            } else {
+                return false; // Retourner false si le titre contient moins de 2 lettres
+            }
+        }
+
+        if (!empty($category)) {
+            $query .= " AND categorie_id = :category";
+        }
+
+        if (!empty($author)) {
+            $query .= " AND auteur LIKE :author";
+        }
+
+        $query .= " ORDER BY id_livre ASC";
+
+        // Préparer et exécuter la requête
+        $stmt = $this->db->prepare($query);
+
+        if (!empty($search)) {
+            if (strlen($search) >= 2) {
+                $stmt->bindValue(':search', '%' . $search . '%');
+            }
+        }
+
+        if (!empty($category)) {
+            $stmt->bindValue(':category', $category);
+        }
+
+        if (!empty($author)) {
+            $stmt->bindValue(':author', '%' . $author . '%');
+        }
+
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

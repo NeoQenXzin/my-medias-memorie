@@ -16,7 +16,7 @@ if (!isset($_POST['modif'])) {
 
 <form action="gestion_update_book.php" method="post" enctype="multipart/form-data" class='neumorphic-card-delete'>
 <th >
-            <legend class='delete-action-title'><b>Modifier votre livre</b></legend>
+            <legend class='delete-action-title'><h2>Modifier votre livre</h2></legend>
             <p class='neumorphic-btn'><a  href="gestion_livres.php">Retour</a></p>
         </th>
             <table class='neumorphic-card centre'>

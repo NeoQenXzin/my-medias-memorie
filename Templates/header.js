@@ -4,7 +4,7 @@ const linkMesMedias = document.getElementById('link-mes-medias')
 
 linkAdd.addEventListener('click', () => location.href = 'index.php')
 linkGestionCrud.addEventListener('click', () => location.href = 'gestion_livres.php')
-linkMesMedias.addEventListener('click', () => location.href = 'my-med.php')
+linkMesMedias.addEventListener('click', () => location.href = 'my-medias.php')
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -16,27 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (currentPage.includes('index.php')) {
         linkAdd.classList.add('active');
-    } else if (currentPage.includes('my-med.php')) {
+    } else if (currentPage.includes('my-medias.php')) {
         linkMesMedias.classList.add('active');
     } else if (currentPage.includes('gestion_livres.php')) {
         linkGestionCrud.classList.add('active');
     }
 });
-
-
-//navbar responsive
-// document.addEventListener('DOMContentLoaded', function () {
-//     const menuIcon = document.querySelector('.menu-icon');
-//     const nav = document.querySelector('.nav');
-
-//     menuIcon.addEventListener('click', function () {
-//         nav.classList.toggle('active');
-//     });
-
-//     // Fermer le menu lorsque vous cliquez sur un lien
-//     document.querySelectorAll('.nav li:not(.logo)').forEach(function (link) {
-//         link.addEventListener('click', function () {
-//             nav.classList.remove('active');
-//         });
-//     });
-// });
